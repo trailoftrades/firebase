@@ -1,0 +1,20 @@
+{
+	"users": {
+		"[user_id]": {
+			"name": "Ken Mueller",
+			"email": "kenmueller0@gmail.com",
+			"cash": 1000,
+			"created": "[date]"
+		}
+	},
+	"companies": {
+		"[company_id]": {
+			"owner": "[user_id]",
+			"name": "Ken's Pizza Place",
+			"color": "red",
+			"rate": 100, // $/hour
+			"cash": 12000, // net worth
+			"created": "[date]"
+		}
+	}
+}

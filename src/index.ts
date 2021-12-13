@@ -1,5 +1,2 @@
-import * as functions from 'firebase-functions'
-
-export const hello = functions.https.onRequest((_req, res) => {
-	res.send('hello')
-})
+export { default as userCreated } from './user/created'
+export { default as userDeleted } from './user/deleted'

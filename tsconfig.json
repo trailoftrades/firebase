@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"module": "commonjs",
+		"target": "es2017",
+		"importsNotUsedAsValues": "error",
+		"useUnknownInCatchVariables": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"isolatedModules": true,
+		"resolveJsonModule": true,
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"outDir": "build"
+	},
+	"include": ["src/**/*.ts"]
+}

@@ -11,6 +11,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@main
+      - name: Set up Node
+        uses: actions/setup-node@main
+        with:
+          node-version: '14'
       - name: Deploy
         uses: w9jds/firebase-action@master
         with:

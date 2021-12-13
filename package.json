@@ -1,7 +1,7 @@
 {
 	"name": "trailoftrades",
 	"version": "1.0.0",
-	"main": "build",
+	"main": "build/index.js",
 	"engines": {
 		"node": "14"
 	},

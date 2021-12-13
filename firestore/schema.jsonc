@@ -1,8 +1,8 @@
 {
 	"users": {
 		"[user_id]": {
-			"name": "Ken Mueller",
-			"email": "kenmueller0@gmail.com",
+			"name": "Ken Mueller", // or null
+			"email": "kenmueller0@gmail.com", // or null
 			"cash": 1000,
 			"created": "[date]"
 		}

@@ -14,7 +14,14 @@
 			"color": "red",
 			"rate": 100, // $/hour
 			"cash": 12000, // net worth
-			"created": "[date]"
+			"created": "[date]",
+			"evaluations": {
+				// Milliseconds since epoch
+				"1639450355455": {
+					"rate": 76, // $/hour
+					"cash": 11760 // net worth
+				}
+			}
 		}
 	}
 }

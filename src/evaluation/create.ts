@@ -1,13 +1,12 @@
 import type { DocumentSnapshot } from 'firebase-admin/firestore'
 
+import currentEvaluation from './current'
+
 const createEvaluation = async (company: DocumentSnapshot) => {
 	await company.ref
 		.collection('evaluations')
 		.doc(Date.now().toString())
-		.create({
-			rate: company.get('rate') as unknown,
-			cash: company.get('cash') as unknown
-		})
+		.create(currentEvaluation(company))
 }
 
 export default createEvaluation

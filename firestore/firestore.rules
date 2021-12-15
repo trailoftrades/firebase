@@ -3,11 +3,19 @@ rules_version = '2'
 service cloud.firestore {
 	match /databases/{database}/documents {
 		match /users/{user} {
-			allow read
+			allow read: if isSignedInAs(user)
 		}
 
 		match /companies/{company} {
 			allow read
+		}
+
+		function isSignedIn() {
+			return request.auth != null
+		}
+		
+		function isSignedInAs(user) {
+			return isSignedIn() && request.auth.uid == user
 		}
 	}
 }

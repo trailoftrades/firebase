@@ -21,6 +21,11 @@
 					"rate": 76, // $/hour
 					"cash": 11760 // net worth
 				}
+			},
+			"story": {
+				// Milliseconds since epoch
+				// Only includes day. Hours are set to 0.
+				"1639641600000": {}
 			}
 		}
 	}
